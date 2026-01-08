@@ -21,14 +21,14 @@ def compute_avg_lab(img_path):
     return avg_lab
 
 # ========== Lấy trung bình Lab của ảnh mẫu ==========
-print("📥 Đang tính trung bình Lab từ ảnh mẫu tone 4...")
+print("Đang tính trung bình Lab từ ảnh mẫu tone 4...")
 sample_files = [os.path.join(SAMPLE_DIR, f) for f in os.listdir(SAMPLE_DIR)
                 if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
 sample_lab_values = [compute_avg_lab(f) for f in sample_files]
 avg_sample_lab = np.mean(sample_lab_values, axis=0)
 
 # ========== Lọc ảnh trong thư mục Type_4 ==========
-print("🔍 Đang lọc ảnh gần với tone 4...")
+print("Đang lọc ảnh gần với tone 4...")
 image_files = [f for f in os.listdir(INPUT_DIR) if f.lower().endswith(('.jpg', '.jpeg', '.png'))]
 
 for fname in tqdm(image_files):
@@ -43,4 +43,4 @@ for fname in tqdm(image_files):
     except Exception as e:
         print(f"Lỗi với ảnh {fname}: {e}")
 
-print(f"\n✅ Hoàn tất lọc tone 4. Kết quả: {len(os.listdir(OUTPUT_DIR))} ảnh tại {OUTPUT_DIR}")
+print(f"\nHoàn tất lọc tone 4. Kết quả: {len(os.listdir(OUTPUT_DIR))} ảnh tại {OUTPUT_DIR}")
