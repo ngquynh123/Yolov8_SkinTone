@@ -218,7 +218,7 @@ Dự án này được phát triển cho mục đích phân loại và phân tí
 
 ## 👥 Đóng Góp
 
-Không gian làm việc dự án: `d:\FINAL_SKINTONE_YOLOv8\FINAL_SKINTONE\`
+Không gian làm việc dự án: `../FINAL_SKINTONE`
 
 ---
 
