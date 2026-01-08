@@ -1,0 +1,50 @@
+# Model weights
+*.pth
+*.pt
+*.weights
+*.onnx
+
+# Datasets and images
+*/combined_face/
+*/combined_face_new_*/
+*/data_*/
+*/dataset_*/
+*/augmented_dataset/
+*/output_*/
+*/temp_*/
+test_images*/
+test3/
+test4/
+
+# Training outputs
+runs/
+md/
+
+# Logs and results
+*.csv
+*.log
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.env
+
+# Jupyter Notebook
+.ipynb_checkpoints
+*.ipynb_checkpoints/
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
